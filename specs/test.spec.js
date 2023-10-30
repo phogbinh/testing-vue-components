@@ -8,7 +8,7 @@ test('mount a vue component', () => {
       'value': 'VueSchool'
     }
   });
-  expect(wrapper.html()).toMatchSnapshot();
+  expect(wrapper).toMatchSnapshot();
 });
 
 test('ListComponent', async () => {
@@ -17,5 +17,5 @@ test('ListComponent', async () => {
   await wrapper.setData({
     'marvelMovies': [...movies, 'Endgame']
   });
-  expect(wrapper.html()).toMatchSnapshot();
+  expect(wrapper).toMatchSnapshot();
 });
